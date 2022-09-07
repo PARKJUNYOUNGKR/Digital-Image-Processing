@@ -1,0 +1,32 @@
+let img, n;
+
+function preload(){
+  img = loadImage('bird.png');
+}
+function setup() {
+  createCanvas(img.width, img.height*2);
+  n = createImage(img.width, img.height);
+  background(100);
+  image(img, 0, 0);
+  imgInv();
+}
+function imgInv(){
+  img.loadPixels();
+  n.loadPixels();
+  for(let i = 0; i < img.width*img.height*4; i += 4){
+    //let pv = img.pixels[i+0]*0.3+img.pixels[i+1]*0.5+img.pixels[i+0]*0.2?
+    //if(pv>127)pv = 255;
+    //else pv = 0;
+    //n.pixels[i+0] = pv //붉은색 인버스
+    //n.pixels[i+1] = pv //초록색 인버스
+    //n.pixels[i+2] = pv //파란색 인버스
+    //n.pixels[i+3] = img.pixels[i+3];
+    
+    n.pixels[i+0] = 255-img.pixels[i+0]; //붉은색 인버스
+    n.pixels[i+1] = 255-img.pixels[i+1]; //초록색 인버스
+    n.pixels[i+2] = 255-img.pixels[i+2]; //파란색 인버스
+    n.pixels[i+3] = img.pixels[i+3];
+  }
+  n.updatePixels();
+  image(n, 0, img.height);
+}
