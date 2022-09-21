@@ -1,0 +1,28 @@
+let m1, m2, w, h;
+function preload(){
+  m1 = loadImage('https://cdn.pixabay.com/photo/2022/08/08/20/23/cardinal-7373562_960_720.jpg');
+}
+function setup() {
+  w = m1.width;   
+  h = m1.height;
+  createCanvas(400,400);
+  m2 = createImage(w, h);
+  copyImg();
+}
+function copyImg(){
+  m1.loadPixels();  
+  m2.loadPixels();
+  size = w * h * 4;
+  
+  for(let i=0;i<size;i+=4){
+    m2.pixels[i+0] = m1.pixels[i+0]; //아래의 다른 값들을 0으로 설정하게 된다면 빨간색 픽셀로 설정된 필터를 설정할 수 있다.    
+    m2.pixels[i+1] = m1.pixels[i+1]; 
+    m2.pixels[i+2] = m1.pixels[i+2];     
+    m2.pixels[i+3] = 128;//투명도 0~255 사이 값으며 0에 가까워 질수록 투명해진다
+  }
+  m2.updatePixels();
+}
+function draw(){
+  image(m1, 0,0,400,400);
+  image(m2,mouseX-100,mouseY-100, 200,200);
+}
