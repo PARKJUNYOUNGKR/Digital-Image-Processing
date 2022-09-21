@@ -1,0 +1,25 @@
+let img, w, h;
+let flip=false;
+function preload(){
+    img = loadImage('https://upload.wikimedia.org/wikipedia/ko/2/24/Lenna.png');
+}
+function setup() {
+  w = img.width;
+  h = img.height;
+  createCanvas(w, h);
+}
+function draw() {
+  background(220);
+  if (flip){ 
+    scale(-1, -1); 
+    // scale(-1.0) // 화면의 전환 정도 설정
+    image(img, -w, -h, w, h);
+    //image(img,-w,0,w,h); // 화면의 전환 후 위치 설정
+  }
+  else {
+    image(img, 0, 0, w, h);
+  }
+}
+function mousePressed() {
+  flip = !flip;
+}
