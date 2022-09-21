@@ -1,0 +1,22 @@
+let img, w, h;
+let url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Cat03.jpg/481px-Cat03.jpg';
+function preload() {
+  img = loadImage(url);
+
+}
+function setup() {
+  w = img.width;
+  h = img.height;
+  createCanvas(2*w, 2*h);
+  imageMode(CENTER);
+}
+let f=0;
+function draw(){
+  if(mouseIsPressed){
+  translate(mouseX,mouseY);
+  rotate(f);
+  f = f + 0.1;
+  scale(sin(f)+1);
+  image(img, 0, 0, w/4, h/4);
+}
+}
