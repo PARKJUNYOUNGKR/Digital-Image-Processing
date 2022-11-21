@@ -56,3 +56,19 @@ Github에 작성을 하고, 링크 및 소감을 제출하시오.
 
 ---
 - 과제 계획서 : ______
+
+## NOTE 5
+
+- Java Script로 영상을 읽어 화면에 출력하기 - 디지털 영상처리 과제 Github 제출
+
+- index.html
+
+1. 메모장에 다음 내용을 적고 study 파일 안에 index.html로 저장한다.
+![image](https://user-images.githubusercontent.com/96164365/202945177-fbb263d3-266b-4cbd-bb07-42daff873c4e.png)
+
+2. 메모장에 다음 내용을 적고 study 파일 안에 rfile.js로 저장한다.
+![image](https://user-images.githubusercontent.com/96164365/202945239-8dfe4d9b-1317-42f9-9583-d2298cae527c.png)
+
+3. index.html 파일 실행 시 결과 영상이다.
+![image](https://user-images.githubusercontent.com/96164365/202945100-cdbd125d-3205-48a6-a071-89311153ab99.png)
+
