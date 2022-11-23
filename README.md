@@ -59,7 +59,7 @@ Github에 작성을 하고, 링크 및 소감을 제출하시오.
 
 ## NOTE 5
 
-- Java Script로 영상을 읽어 화면에 출력하기 - 디지털 영상처리 과제 Github 제출
+- JavaScript로 영상을 읽어 화면에 출력하기 - 디지털 영상처리 과제 Github 제출
 
 - index.html
 
@@ -72,3 +72,19 @@ Github에 작성을 하고, 링크 및 소감을 제출하시오.
 3. index.html 파일 실행 시 결과 영상이다.
 ![image](https://user-images.githubusercontent.com/96164365/202945100-cdbd125d-3205-48a6-a071-89311153ab99.png)
 
+## NOTE 6
+
+- JavaScript 코드를 통해 원래 있던 코드에 내 사진 또는 연예인의 사진을 추가 DB화 했다.
+
+결과물 1. 나의 사진
+![실습 3](https://user-images.githubusercontent.com/96164365/203501582-1b6f2c2a-585a-4069-8eb9-fdd93e0287ef.png)
+
+결과물 2. 가수 김채원
+![실습 1](https://user-images.githubusercontent.com/96164365/203501614-a9c86199-2507-4f25-a105-5fc7d32d6869.png)
+
+결과물 3. 가수 윈터
+![실습 2](https://user-images.githubusercontent.com/96164365/203501675-3e13daf8-7fef-4d64-9fad-35196b5638d4.png)
+
+주의사항 : ![image](https://user-images.githubusercontent.com/96164365/203501775-bfd18dcb-29d8-430f-b5b8-d252b52a05eb.png)
+
+코드 중간에 링크 선정을 조금 고쳐주어야 하며, 사진은 for문을 통해 2장을 학습하기로 했으므로 2장의 사진을 넣어줘야 한다.
